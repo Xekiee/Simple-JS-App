@@ -2,7 +2,7 @@ const Card = ({ title, image }) => {
   return (
     <div>
       <div className="flex items-center justify-between card bg-base-100 w-auto h-50 shadow-sm opacity-80 ">
-        <p className="card-title text-xs">{title}</p>
+        <p className="card-title text-xs md:text-xl lg:text-3xl">{title}</p>
         <div className="card-body items-center text-center ">
           <img src={image} alt="Shoes" className="rounded-xl" />
         </div>
