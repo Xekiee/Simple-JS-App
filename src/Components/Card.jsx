@@ -1,0 +1,19 @@
+const Card = ({ title, image }) => {
+  return (
+    <div>
+      <div className="flex items-center justify-between card bg-base-100 w-auto h-50 shadow-sm opacity-80 ">
+        <p className="card-title text-xs">{title}</p>
+        <div className="card-body items-center text-center ">
+          <img src={image} alt="Shoes" className="rounded-xl" />
+        </div>
+        <div className="card-actions">
+          <button className="btn btn-none h-5 mb-3 bg-transparent border border-primary px-4 py-4 rounded-2xl">
+            <p className="text-xs">Demo </p>
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Card;
