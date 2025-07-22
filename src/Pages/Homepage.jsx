@@ -5,7 +5,7 @@ import Navbar from "../Components/Navbar";
 
 const Homepage = () => {
   return (
-    <div className="bg-base-200 bg-no-repeat bg-[url('./assets/bgg.png')] bg-center">
+    <div className="bg-base-200 bg-no-repeat bg-[url('./assets/bg1.png')] bg-center w-screen h-screen">
       <div>
         <Navbar />
       </div>
