@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 const choices = ["Rock", "Paper", "Scissor"];
 
@@ -33,6 +33,8 @@ const useRpsGame = () => {
       SetScore((prev) => ({ ...prev, player: prev.player + 1 }));
     } else if (result === "You Lose") {
       SetScore((prev) => ({ ...prev, computer: prev.computer + 1 }));
+    } else if (result === "Draw") {
+      SetScore((prev) => ({ ...prev, tie: prev.tie + 1 }));
     }
   };
   return { playerChoice, computerChoice, result, score, play };
