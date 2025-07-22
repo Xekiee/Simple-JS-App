@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const choices = ["Rock, Paer, Scissor"];
+const choices = ["Rock", "Paper", "Scissor"];
 
 const getResult = (player, computer) => {
   if (player === computer) return "Draw";

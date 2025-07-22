@@ -48,7 +48,7 @@ const Rps = () => {
         </div>
         <div className="flex flex-col items-center gap-4">
           <p className="text-primary font-bold">Pick Your Move!</p>
-          <div className="flex gap-4 justify-center">
+          <div className="flex gap-4 justify-center"> 
             <ChoicesButton text="Rock" />
             <ChoicesButton text="Paper" />
             <ChoicesButton text="Scissor" />
