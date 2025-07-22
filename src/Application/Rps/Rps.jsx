@@ -1,5 +1,5 @@
 import Rock from "../../assets/bg1.png";
-
+import ChoicesButton from "./Components/ChoicesButton";
 const Rps = () => {
   return (
     <div className="flex bg-secondary w-screen h-screen justify-center ">
@@ -46,8 +46,13 @@ const Rps = () => {
             <p>You Win!</p>
           </div>
         </div>
-        <div>
-          <PlayerChoice />
+        <div className="flex flex-col items-center gap-4">
+          <p className="text-primary font-bold">Pick Your Move!</p>
+          <div className="flex gap-4 justify-center">
+            <ChoicesButton text="Rock" />
+            <ChoicesButton text="Paper" />
+            <ChoicesButton text="Scissor" />
+          </div>
         </div>
       </div>
     </div>
