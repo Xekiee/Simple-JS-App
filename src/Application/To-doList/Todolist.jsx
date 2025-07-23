@@ -1,4 +1,3 @@
-import React from "react";
 import Listoftodo from "./Component/Listoftodo";
 
 const Todolist = () => {
