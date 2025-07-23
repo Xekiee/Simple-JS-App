@@ -1,4 +1,7 @@
 import { useState } from "react";
+import Rock from "../../../assets/Rock.png";
+import Paper from "../../../assets/Paper.png";
+import Scissor from "../../../assets/Scissors.png";
 
 const choices = ["Rock", "Paper", "Scissor"];
 
@@ -15,6 +18,11 @@ const getResult = (player, computer) => {
   }
 };
 
+const Choicesimage = {
+  Rock,
+  Paper,
+  Scissor,
+};
 const useRpsGame = () => {
   const [playerChoice, setPlayerChoice] = useState(" ");
   const [computerChoice, SetComputerChoice] = useState("");
@@ -37,7 +45,7 @@ const useRpsGame = () => {
       SetScore((prev) => ({ ...prev, tie: prev.tie + 1 }));
     }
   };
-  return { playerChoice, computerChoice, result, score, play };
+  return { playerChoice, computerChoice, result, score, Choicesimage, play };
 };
 
 export default useRpsGame;

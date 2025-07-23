@@ -30,10 +30,14 @@ const Todolist = () => {
         <div className="flex justify-center mt-4">
           <div className="bg-warning h-40 w-60 rounded-2xl">
             <div>
-              <Listoftodo />
-              <Listoftodo />
-              <Listoftodo />
-              <Listoftodo />
+              <ul>
+                <li>
+                  <Listoftodo />
+                  <Listoftodo />
+                  <Listoftodo />
+                  <Listoftodo />
+                </li>
+              </ul>
             </div>
           </div>
         </div>

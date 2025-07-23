@@ -1,9 +1,9 @@
-import Rock from "../../assets/bg1.png";
 import ChoicesButton from "./Components/ChoicesButton";
 import { RpsProvider, useRps } from "./Context/RpsContext";
 
 const RpsGameContent = () => {
-  const { playerChoice, computerChoice, result, score } = useRps();
+  const { playerChoice, computerChoice, result, score, Choicesimage } =
+    useRps();
   return (
     <div className="flex bg-secondary w-screen h-screen justify-center ">
       <div className="w-80">
@@ -41,9 +41,17 @@ const RpsGameContent = () => {
         </div>
         <div className="flex flex-col justify-center items-center h-40 ">
           <div className="flex w-70 justify-between items-center">
-            <img src={Rock} alt={playerChoice} className="w-25" />
+            <img
+              src={Choicesimage[playerChoice]}
+              alt={playerChoice}
+              className="w-20 h-20 rounded-full"
+            />
             <p>VS</p>
-            <img src={Rock} alt={computerChoice} className="w-25" />
+            <img
+              src={Choicesimage[computerChoice]}
+              alt={computerChoice}
+              className="w-20 h-20 rounded-full"
+            />
           </div>
           <div className="mt-4 text-xl font-bold text-accent">
             <p>{result}</p>
