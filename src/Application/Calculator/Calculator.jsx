@@ -1,5 +1,5 @@
 import React from "react";
-import Button from "../Components/Button";
+import Button from "./Component/Button";
 import useCalculator from "./Hooks/Hooks";
 
 const Calculator = () => {

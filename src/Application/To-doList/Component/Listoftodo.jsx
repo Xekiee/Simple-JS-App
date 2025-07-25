@@ -1,4 +1,3 @@
-import React from "react";
 import Check from "../../../assets/Check.png";
 import Trash from "../../../assets/Trash.png";
 const Listoftodo = () => {
