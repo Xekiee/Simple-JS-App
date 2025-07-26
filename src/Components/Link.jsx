@@ -5,7 +5,7 @@ const Link = () => {
     <div className="flex flex-col items-center bg-base-100 w-auto h-30 mx-4 my-8 rounded-2xl md:h-70 md:mx-10 md:my-10 lg:my-12 lg:mx-16 lg:h-110">
       <div className="flex text-base mt-2 md:text-3xl md:mt-8 md:mb-8 lg:text-6xl lg:mt-10 lg:mb-10">
         <i className="bi bi-lightbulb-fill text-yellow-400 mr-4"></i>
-        <p>Learn JavaScript by building!</p>
+        <span>Learn JavaScript by building!</span>
       </div>
       <div>
         <div className="flex  justify-center mx-10 my-2 text-base md:text-3xl md:mx-30 md:my-6 lg:mx-45 lg:my-10 lg:text-5xl ">
