@@ -9,7 +9,7 @@ const Card = ({ title, image }) => {
           <img src={image} alt="Shoes" className="rounded-xl" />
         </div>
         <div className="card-actions">
-          <button className="btn btn-none h-5 mb-3 bg-transparent border border-primary px-4 py-4 rounded-2xl">
+          <button className="btn btn-none h-5 mb-3 bg-transparent border border-primary px-4 py-4 rounded-2xl" >
             <span className="text-xs">Demo </span>
           </button>
         </div>

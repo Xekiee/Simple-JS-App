@@ -1,9 +1,8 @@
 import { useState } from "react";
 
-const useTodo = () => {
+const Hooks = () => {
   const [input, setInput] = useState("");
   const [todos, setTodos] = useState([]);
-  const [done, setDone] = useState([]);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -12,23 +11,13 @@ const useTodo = () => {
     setInput("");
   };
 
-  const handleDone = (todo) => {
-    setTodos(todos.filter((t) => t !== todo));
-    setDone([...done, todo]);
-  };
-
-  const handleDelete = (todo) => {
-    setTodos(todos.filter((t) => t !== todo));
-  };
-
   return {
     input,
     setInput,
     todos,
-    done,
+    setTodos,
     handleSubmit,
-    handleDone,
-    handleDelete,
   };
 };
-export default useTodo;
+
+export default Hooks;
