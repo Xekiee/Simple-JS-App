@@ -23,8 +23,8 @@ const Calculator = () => {
     "-",
   ];
   return (
-    <div className="flex flex-col justify-center items-center w-screen h-screen ">
-      <div className="flex justify-center mt-4 text-4xl text-primary italic ">
+    <div className="flex flex-col justify-center items-center w-screen h-screen bg-base-200">
+      <div className="flex justify-center mt-4 text-4xl text-base-content font-bold ">
         {" "}
         <span>Calculator</span>
       </div>
@@ -32,9 +32,9 @@ const Calculator = () => {
         className="flex justify-center mt-10 "
         onSubmit={(e) => e.preventDefault()}
       >
-        <div className="h-125 w-70 bg-warning/70 rounded-2xl flex flex-col items-center font-family">
-          <div className="h-45 w-60 bg-black/40 mt-10 rounded-2xl flex justify-center items-center flex-col">
-            <div className="flex items-center h-20 w-60 mt-10 justify-between text-2xl">
+        <div className="h-125 w-70 bg-base-100 rounded-2xl flex flex-col items-center font-family">
+          <div className="h-45 w-60 bg-base-300/30 mt-10 rounded-2xl flex justify-center items-center flex-col">
+            <div className="flex items-center h-20 w-60 mt-10 justify-between text-2xl font-bold">
               <div className="flex-1 mx-5 ">
                 <span>=</span>
               </div>

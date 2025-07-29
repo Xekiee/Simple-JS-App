@@ -5,25 +5,25 @@ const RpsGameContent = () => {
   const { playerChoice, computerChoice, result, score, Choicesimage } =
     useRps();
   return (
-    <div className="flex bg-secondary w-screen h-screen justify-center ">
+    <div className="flex bg-base-200 w-screen h-screen justify-center ">
       <div className="w-80">
-        <nav className="flex text-2xl text-primary italic font-semibold font-family justify-center mt">
+        <nav className="flex text-2xl text-base-content  font-extrabold justify-center mt-10">
           <span className="mt-5">Rock Paper Scissor</span>
         </nav>
         <div className="flex justify-center mt-10 ">
-          <div className="bg-warning h-60 w-70 rounded-2xl opacity-70">
-            <div className="flex justify-center mt-5 text-primary font-bold text-2xl">
+          <div className="bg-base-100 h-60 w-70 rounded-2xl opacity-70">
+            <div className="flex justify-center mt-5 text-neutral font-bold text-2xl">
               <p>Score</p>
             </div>
             <div className="flex justify-center mt-3">
-              <div className="flex justify-between w-50 text-primary font-bold text-2xl">
+              <div className="flex justify-between w-50  font-bold text-2xl text-neutral">
                 <p>P</p>
                 <p>T</p>
                 <p>C</p>
               </div>
             </div>
-            <div className="mx-8 w-55">
-              <div className="flex items-center justify-between text-2xl">
+            <div className="mx-8 w-55 ">
+              <div className="flex items-center justify-between text-2xl text-neutral font-semibold ">
                 <p className="w-8">{score.player}</p>
                 <div className="w-px h-32 bg-gray-400"></div>
                 <p className="w-8">{score.tie}</p>
@@ -53,12 +53,12 @@ const RpsGameContent = () => {
               className="w-20 h-20 rounded-full"
             />
           </div>
-          <div className="mt-4 text-xl font-bold text-accent">
+          <div className="mt-4 text-xl font-bold text-success">
             <p>{result}</p>
           </div>
         </div>
         <div className="flex flex-col items-center gap-4">
-          <p className="text-primary font-bold">Pick Your Move!</p>
+          <p className="text-base-content font-bold">Pick Your Move!</p>
           <div className="flex gap-4 justify-center">
             <ChoicesButton text="Rock" />
             <ChoicesButton text="Paper" />

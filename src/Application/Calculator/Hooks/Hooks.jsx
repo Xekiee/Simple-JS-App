@@ -5,11 +5,11 @@ const Hooks = () => {
   const { value, setValue } = useContext(CalculatorContext);
   const [result, setResult] = useState("");
 
-  const handleClick = (value) => {
-    if (value === "AC") {
+  const handleClick = (val) => {
+    if (val === "AC") {
       setValue("");
       setResult("");
-    } else if (value === "=") {
+    } else if (val === "=") {
       if (value.trim() === "") {
         setResult("");
       } else {

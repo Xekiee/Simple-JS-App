@@ -13,20 +13,20 @@ const Todolist = () => {
   } = useTodo();
 
   return (
-    <div className="flex justify-center bg-secondary flex-col h-screen items-center">
-      <div className="flex justify-center mt-4 font-family text-primary text-2xl italic">
+    <div className="flex justify-center bg-base-200 flex-col h-screen items-center">
+      <div className="flex justify-center mt-4  text-base-content text-2xl font-extrabold">
         <header>
           <p>Todo-List</p>
         </header>
       </div>
 
-      <div className="mt-10 h-140 w-70 rounded-2xl bg-warning/80 bg-opacity-70">
+      <div className="mt-10 h-140 w-70 rounded-2xl bg-base-100 bg-opacity-70">
         <form className="flex justify-center mt-7" onSubmit={handleSubmit}>
           <input
             type="text"
             onChange={(e) => setInput(e.target.value)}
             value={input}
-            className="bg-none border-2 border-white-xs rounded-sm mr-2 pl-3"
+            className="bg-none border-2 border-base-conten rounded-xl mr-2 pl-3"
             placeholder="What to do!"
           />
           <button className="bg-none border-2 w-14 h-8 rounded-lg text-xl pb-8">
@@ -38,7 +38,7 @@ const Todolist = () => {
           <p>List of todo</p>
         </div>
         <div className="flex justify-center mt-4">
-          <div className="bg-warning h-40 w-60 rounded-2xl overflow-y-auto">
+          <div className="bg-base-300 h-40 w-60 rounded-2xl overflow-y-auto">
             <ul>
               {todos.map((todo, index) => (
                 <li key={index}>
@@ -58,7 +58,7 @@ const Todolist = () => {
             <p>Done Task</p>
           </div>
           <div className="flex justify-center mt-4">
-            <div className="bg-warning h-40 w-60 rounded-2xl flex justify-center overflow-y-auto">
+            <div className="bg-base-300 h-40 w-60 rounded-xl flex justify-center overflow-y-auto">
               <ul className="mt-4">
                 {done.map((d, index) => (
                   <li key={index}>{d}</li>
