@@ -1,5 +1,3 @@
-import React from "react";
-
 const Link = () => {
   return (
     <div className="flex flex-col items-center bg-base-100 w-auto h-30 mx-4 my-8 rounded-2xl md:h-70 md:mx-10 md:my-10 lg:my-12 lg:mx-16 lg:h-110">
@@ -10,12 +8,12 @@ const Link = () => {
       <div>
         <div className="flex  justify-center mx-10 my-2 text-base md:text-3xl md:mx-30 md:my-6 lg:mx-45 lg:my-10 lg:text-5xl ">
           <i className="bi bi-link mr-4 "></i>
-          <a href="">Github</a>
+          <a href="https://github.com/Xekiee?tab=repositories">Github</a>
         </div>
         <hr className="w-auto mx-auto border-t-2 border-black-800 mb-2 md:border-t-4 lg:border-t-6" />
         <div className="flex  justify-center mx-10 my-2 text-base md:text-3xl md:mx-30 md:my-6 lg:mx-45 lg:my-10 lg:text-5xl ">
           <i className="bi bi-link mr-4"></i>
-          <a href="">Porfolio</a>
+          <a href="https://portfolio-c44eb.firebaseapp.com/">Porfolio</a>
         </div>
       </div>
     </div>

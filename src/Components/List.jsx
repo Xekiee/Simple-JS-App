@@ -2,6 +2,7 @@ import Card from "./Card";
 import Calculator from "../assets/Calculator.png";
 import Rps from "../assets/Rps.png";
 import Todolist from "../assets/Todolist.png";
+import LightDark from "./Light-Dark";
 const List = () => {
   return (
     <div>
@@ -9,7 +10,7 @@ const List = () => {
         <Card title="Calculator" link="/Calculator" image={Calculator} />
         <Card title="Rock Paper Scissor" link="/Rps" image={Rps} />
         <Card title="To-Do-List" link="/To-dolist" image={Todolist} />
-        <Card title="Dark/Light Mode" link="/theme-toggle" />
+        <LightDark title="Light/Dark Mode" />
       </div>
     </div>
   );
