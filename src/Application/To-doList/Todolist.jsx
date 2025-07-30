@@ -29,7 +29,7 @@ const Todolist = () => {
             className="bg-none border-2 border-base-conten rounded-xl mr-2 pl-3"
             placeholder="What to do!"
           />
-          <button className="bg-none border-2 w-14 h-8 rounded-lg text-xl pb-8">
+          <button className="bg-none border-2 w-14 h-8 rounded-lg text-xl pb-8 hover:bg-primary hover:text-white cursor-pointer transition:all duration-200">
             <p>+</p>
           </button>
         </form>

@@ -8,7 +8,7 @@ const Link = () => {
       <div>
         <div className="flex  justify-center mx-10 my-2 text-base md:text-3xl md:mx-30 md:my-6 lg:mx-45 lg:my-10 lg:text-5xl ">
           <i className="bi bi-link mr-4 "></i>
-          <a href="https://github.com/Xekiee?tab=repositories">Github</a>
+          <a href="https://github.com/Xekiee/Simple-JS-App">Github</a>
         </div>
         <hr className="w-auto mx-auto border-t-2 border-black-800 mb-2 md:border-t-4 lg:border-t-6" />
         <div className="flex  justify-center mx-10 my-2 text-base md:text-3xl md:mx-30 md:my-6 lg:mx-45 lg:my-10 lg:text-5xl ">

@@ -12,18 +12,18 @@ const RpsGameContent = () => {
         </nav>
         <div className="flex justify-center mt-10 ">
           <div className="bg-base-100 h-60 w-70 rounded-2xl opacity-70">
-            <div className="flex justify-center mt-5 text-neutral font-bold text-2xl">
+            <div className="flex justify-center mt-5 text-primary font-bold text-2xl">
               <p>Score</p>
             </div>
             <div className="flex justify-center mt-3">
-              <div className="flex justify-between w-50  font-bold text-2xl text-neutral">
+              <div className="flex justify-between w-50  font-bold text-2xl text-primary">
                 <p>P</p>
                 <p>T</p>
                 <p>C</p>
               </div>
             </div>
             <div className="mx-8 w-55 ">
-              <div className="flex items-center justify-between text-2xl text-neutral font-semibold ">
+              <div className="flex items-center justify-between text-2xl text-primary font-semibold ">
                 <p className="w-8">{score.player}</p>
                 <div className="w-px h-32 bg-gray-400"></div>
                 <p className="w-8">{score.tie}</p>

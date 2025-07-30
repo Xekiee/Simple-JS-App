@@ -5,11 +5,19 @@ import Todolist from "./Application/To-doList/Todolist";
 import Homepage from "./Pages/Homepage";
 import Calculator from "./Application/Calculator/Calculator";
 import CalcuContext from "./Application/Calculator/CalcuContext/CalcuContext";
+import { ThemeProvider } from "./Components/LDContext";
 function App() {
   return (
     <div>
       <Routes>
-        <Route path="/" element={<Homepage></Homepage>} />
+        <Route
+          path="/"
+          element={
+            <ThemeProvider>
+              <Homepage></Homepage>
+            </ThemeProvider>
+          }
+        />
         <Route
           path="/calculator"
           element={

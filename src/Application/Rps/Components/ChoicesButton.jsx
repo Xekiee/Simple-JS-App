@@ -7,7 +7,7 @@ const PlayerChoice = ({ text }) => {
     <div>
       <button
         onClick={() => play(text)}
-        className="bg-none border-2 w-20 h-10 rounded-xl border-primary font-family font-bold"
+        className="bg-none border-2 w-20 h-10 rounded-xl border-primary font-family font-bold hover:bg-primary hover:text-white cursor-pointer "
       >
         {text}
       </button>
